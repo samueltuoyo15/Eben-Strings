@@ -38,7 +38,7 @@ export default function ChordLibrary() {
             <h3 className="text-2xl font-bold mb-2">{selectedChord.name} Chord</h3>
             <p className="text-4xl font-mono mb-4">{selectedChord.fingering}</p>
             <p className="text-gray-600">
-              ✕ = Don't play this string<br />
+              ✕ = Don&#39;t play this string<br />
               ◯ = Open string<br />
               ① ② ③ ④ = Finger placement
             </p>
@@ -48,4 +48,3 @@ export default function ChordLibrary() {
     </div>
   )
 }
-

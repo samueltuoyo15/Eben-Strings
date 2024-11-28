@@ -11,7 +11,7 @@ export default function Metronome() {
   const timerID = useRef<number | null>(null)
 
   useEffect(() => {
-    audioContext.current = new (window.AudioContext || (window as any).webkitAudioContext)()
+    audioContext.current = new (window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext)()
     return () => {
       if (audioContext.current) {
         audioContext.current.close()
@@ -87,4 +87,3 @@ export default function Metronome() {
     </div>
   )
 }
-

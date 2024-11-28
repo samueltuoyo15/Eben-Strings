@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react'
 export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Welcome to Eben String</h1>
+      <h1 className="text-4xl font-bold mb-6">Welcome to Eben Strings</h1>
       <p className="text-xl mb-8">Start your journey to becoming a guitar pro today!</p>
       
       <div className="grid md:grid-cols-3 gap-6">
